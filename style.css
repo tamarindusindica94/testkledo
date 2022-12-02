@@ -1,0 +1,120 @@
+/* Scroll behaviour */
+@media (min-height: 30em) {
+    main {
+      scroll-snap-type: y mandatory;
+      height: 100vh;
+      overflow-y: auto;
+    }
+  }
+  .section {
+    /*color: white;*/
+    position: relative;
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  @media (min-height: 30em) {
+    .section {
+      height: 100vh;
+    }
+  }
+ 
+body {
+    font-family: 'Be Vietnam';
+    font-style: normal;
+    background-image: url("https://i.ibb.co/gtwT8bq/Background.png");
+    background-size:cover; 
+    background-attachment: fixed;
+    overflow-y:hidden;
+}
+.nav-bar{
+    position: fixed;
+    top:5%;
+    left: 50%;
+  transform: translate(-50%, -50%);
+}
+nav {
+    width: 100%;
+    height: 100px;
+ }
+ nav ul {
+    margin: 0;
+    padding: 0;
+ }
+ nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    float: center;
+    line-height: 100px;
+ }
+ nav ul li a {
+    text-decoration: none;
+    margin: 5px;
+    padding: 14px 20px;
+    color: white;
+    border-radius: 5px;
+ }
+ nav ul li a:hover {
+    color : yellow;
+ }
+ .header-bar{
+  float: none;
+  position: absolute;
+  text-align: center;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ }
+
+ .fitur-info {
+    float: none;
+  position: absolute;
+  text-align: center;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.gambar-fitur-1,.gambar-fitur-3,.gambar-fitur-5,.gambar-fitur-7{
+    float: none;
+    position: absolute;
+    text-align: center;
+    top: 55%;
+    left: 25%;
+    transform: translate(-50%, -50%);  
+}
+.desc-fitur-1, .desc-fitur-3, .desc-fitur-5, .desc-fitur-7{
+    float: none;
+    position: absolute;
+    text-align: center;
+    top: 55%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+}
+.gambar-fitur-2, .gambar-fitur-4,.gambar-fitur-6{
+    float: none;
+    position: absolute;
+    text-align: center;
+    top: 55%;
+    left: 75%;
+    transform: translate(-50%, -50%);  
+}
+.desc-fitur-2, .desc-fitur-4, .desc-fitur-6 {
+    float: none;
+    position: absolute;
+    text-align: center;
+    top: 55%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+footer{
+    font-family: Be Vietnam;
+    width:100%;
+    float:bottom;
+    bottom:0;
+    position:fixed;
+    text-align:center;
+    vertical-align: middle;
+    height: 3vw;
+    z-index: 2;
+}
